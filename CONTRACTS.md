@@ -91,8 +91,8 @@ Get the distribution of next tokens for a given context.
   },
   "model_info": {
     "provider": "hf-local",
-    "model_name": "gpt2",
-    "vocab_size": 50257
+    "model_name": "Qwen/Qwen2.5-1.5B",
+    "vocab_size": 151936
   }
 }
 ```

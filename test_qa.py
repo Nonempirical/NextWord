@@ -31,8 +31,8 @@ def test_health():
         print(f"  Model: {data.get('model_name')}")
         print(f"  Vocab size: {data.get('vocab_size')}")
         print(f"  Contract version: {data.get('contract_version')}")
-        assert data.get('model_name') == 'distilgpt2', "Wrong model name"
-        assert data.get('vocab_size') == 50257, "Wrong vocab size"
+        assert data.get('model_name') == 'Qwen/Qwen2.5-1.5B', "Wrong model name"
+        assert isinstance(data.get('vocab_size'), int) and data.get('vocab_size') > 0, "Invalid vocab size"
         assert data.get('contract_version') == 'v1', "Wrong contract version"
         return True
     except requests.exceptions.ConnectionError:

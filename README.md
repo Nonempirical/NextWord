@@ -121,7 +121,7 @@ type Trace = Array<StepRecord>;
 
 ## Model & Performance Defaults
 
-- **Model**: `distilgpt2` (fastest CPU baseline)
+- **Model**: `Qwen/Qwen2.5-1.5B` (Qwen2.5-1.5B model)
 - **Context Cap**: 512 tokens (internal, truncates from beginning if exceeded)
 - **Top-k Default**: 10
 - **Top-k Range**: 5-30 (server clamps to this range)

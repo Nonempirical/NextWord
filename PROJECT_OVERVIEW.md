@@ -268,7 +268,7 @@ React Error Boundary that catches rendering errors and displays a fallback UI in
 │    - Convert IDs to PyTorch tensor                              │
 │    - Run model.forward(input_ids)                               │
 │    - Extract logits[0, -1, :] (last position, vocab-sized)      │
-│    - Returns: [2.3, -1.5, 0.8, ..., 4.2] (50257 floats)        │
+│    - Returns: [2.3, -1.5, 0.8, ..., 4.2] (vocab-sized array)    │
 │      (one logit per vocabulary token)                           │
 └─────────────────────────────────────────────────────────────────┘
                             │
@@ -567,5 +567,6 @@ NextWord is a **pedagogical tool** that makes LLM token generation transparent. 
 - The role of temperature and top-p in generation
 
 The architecture is designed for **stability** (frozen contracts), **clarity** (clear separation of concerns), and **resilience** (defensive programming, error handling). The UI provides rich visual feedback while the backend handles the complex model inference efficiently.
+
 
 

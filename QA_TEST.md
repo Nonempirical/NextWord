@@ -7,8 +7,8 @@
    uvicorn main:app --reload
    ```
    - Server should start on `http://localhost:8000`
-   - Model should load (distilgpt2)
-   - Check `/healthz` returns: `{"model_name": "distilgpt2", "vocab_size": 50257, "contract_version": "v1"}`
+   - Model should load (Qwen/Qwen2.5-1.5B)
+   - Check `/healthz` returns: `{"model_name": "Qwen/Qwen2.5-1.5B", "vocab_size": <positive integer>, "contract_version": "v1"}`
 
 2. **Start Frontend:**
    ```bash

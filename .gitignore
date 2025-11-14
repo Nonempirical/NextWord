@@ -39,3 +39,6 @@ dist/
 .vite/
 *.log
 
+# Personal helper files
+How to start.txt
+

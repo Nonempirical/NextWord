@@ -1,0 +1,7 @@
+Rätt miljö : 
+cd C:\Users\filip\Desktop\NextWord
+.\.venv\Scripts\Activate.ps1
+
+
+Frontend : 
+npm run dev 

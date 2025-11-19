@@ -23,10 +23,10 @@ from adapter_hf import HuggingFaceAdapter
 
 app = FastAPI(title="NextWord API", version="1.0.0")
 
-# CORS middleware for client access (enable for localhost:3001 during dev)
+# CORS middleware for client access (enable for localhost:3000 and 3001 during dev)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3001"],  # Frontend proxy → backend
+    allow_origins=["http://localhost:3000", "http://localhost:3001"],  # Frontend ports
     allow_credentials=True,
     allow_methods=["POST", "GET"],  # Only POST and GET
     allow_headers=["Content-Type"],  # Only Content-Type header
